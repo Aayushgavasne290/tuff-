@@ -7,3 +7,12 @@ def print_pattern(n):
 
 # You must call the function and pass it a number to see the output
 print_pattern(5)
+
+# now new type of pattern
+
+def printrevpattern(n):
+    for i in range(n,0,-1):
+        for j in range(i):
+            print("*", end=" ")
+        print()
+printrevpattern(5)        
