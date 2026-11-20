@@ -7,8 +7,8 @@
 # printrevpattern(5)        
 
 def square(n):
-    for i in range(n):
-        for j in range(n):
-            print("*", end=" ")
+    for i in range(n):    #outer loop here will print the rows
+        for j in range(n):  #inner loop here will print the columns
+            print("*", end=" ") # here the star is present that will be printed in over square figure
         print()
 print(square(4))        
