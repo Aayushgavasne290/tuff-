@@ -5,7 +5,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
-# Step 2: Insert a number using the BST rule
+#    Step 2: Insert a number using the BST rule
 def insert(root, value):
     # If we hit an empty spot, put the new node here
     if root is None:
