@@ -25,11 +25,11 @@
 #         rt.right=self.del_node(rt.right,succ.data)
 #         return rt
     
- def get_successor(self,temp):
-     temp=temp.right
-     while temp.left is not None:
-         temp=temp.left
-     return temp
+#  def get_successor(self,temp):
+#      temp=temp.right
+#      while temp.left is not None:
+#          temp=temp.left
+#      return temp
  
                     
     
@@ -131,6 +131,7 @@ class BST:
         while temp.right:
             temp = temp.right
         print("\nMax: ", temp.data)
+    def search(self,key):
 
 
 b1 = BST()
