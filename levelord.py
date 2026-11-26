@@ -88,7 +88,7 @@ class BST:
                 if temp.right:
                    arr.append(temp.right) 
             level+=1    
-                   
+        print("\nheight of the tree: ",level-1)           
 
 b1 = BST()
 b1.insert(Node(100))
