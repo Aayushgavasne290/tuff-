@@ -11,4 +11,14 @@ class linkedlist:
     
     def insert(self,data):
         new_node=node(data)
-        
+        if self.head is None:
+            self.head=new_node
+            self.tail=new_node
+        else:
+            self.tail.next=new_node
+            self.tail=new_node
+    def display(self):
+        temp=self.head
+        while temp is not None:
+            print(temp.data,end=" ")
+            temp=temp.next        
