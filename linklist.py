@@ -1,4 +1,5 @@
 # linkedlist 
+# import grade
 class node:
     def __init__(self,data):
         self.data=data
@@ -21,4 +22,14 @@ class linkedlist:
         temp=self.head
         while temp is not None:
             print(temp.data,end=" ")
-            temp=temp.next        
+            temp=temp.next    
+
+list = linkedlist()
+list.insert(10)
+list.insert(20)
+list.insert(30)
+list.display()
+
+    
+
+                MEGAWIN1K
