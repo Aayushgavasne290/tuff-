@@ -1,3 +1,4 @@
+import grade
 class student:
     def __init__(self,roll_no,name,course):
         self.roll_no=roll_no
@@ -13,11 +14,17 @@ class student:
 
     def get_marks(self):
         return self.__marks
+
+    def get_grade(self):
+        return grade.get_marks(self.__marks)
     def display(self):
         print("roll no:",self.roll_no)
         print("name:",self.name)
         print("course:",self.course)
         print("marks:",self.__marks)
+        print("grade:",self.get_grade())
+        
+        
 s1=student(101,"sachin","B.Tech")
 s2=student(102,"san","B.Tech")
 s1.set_marks(90)
